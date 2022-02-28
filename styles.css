@@ -1,0 +1,186 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap");
+:root {
+  /* ### Primary */
+
+  /* #### Text */
+  --VeryDarkDesaturatedBlue: hsl(238, 29%, 16%);
+  --SoftRed: hsl(14, 88%, 65%);
+
+  /* Background gradient: */
+  --SoftViolet: hsl(273, 75%, 66%);
+  --SoftBlue: hsl(240, 73%, 65%);
+
+  /* #### Text */
+  --VeryDarkGrayishBlue: hsl(237, 12%, 33%);
+  --DarkGrayishBlue: hsl(240, 6%, 50%);
+
+  /* #### Dividers */
+  --LightGrayishBlue: hsl(240, 5%, 91%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background-image: linear-gradient(0, var(--SoftBlue), var(--SoftViolet));
+  font-family: "Kumbh Sans";
+}
+
+main {
+  margin: 0 auto;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.card {
+  background-color: hsl(240, 5%, 98%);
+  border-radius: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  box-shadow: 2px 32px 53px rgba(0, 0, 0, 0.4);
+}
+
+/* Illustration */
+
+.illustration {
+  display: flex;
+  align-items: center;
+  /* overflow: hidden; */
+}
+.illus-bg {
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+}
+.illus-main {
+  position: relative;
+  left: -5%;
+}
+.img-woman {
+  position: relative;
+  z-index: 2;
+}
+.img-box {
+  position: absolute;
+  top: 30%;
+  left: -10%;
+  /* overflow: visible; */
+  z-index: 2;
+}
+
+/* Content */
+hr {
+  border: none;
+  border-top: 1px solid var(--LightGrayishBlue);
+  margin-top: 18px;
+}
+
+.content {
+  padding: 25px 100px 50px 10px;
+  margin-bottom: 50px;
+  margin-left: 10px;
+}
+h1 {
+  margin: 50px 0;
+}
+.faq {
+  margin-top: 15px;
+  color: var(--VeryDarkDesaturatedBlue);
+}
+.subHead {
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.subHead h2 {
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--VeryDarkGrayishBlue);
+  cursor: pointer;
+}
+.subHead h2:hover {
+  color: var(--SoftRed);
+}
+.subHead img {
+  width: 10px;
+  height: 7px;
+  object-fit: cover;
+}
+.faq p {
+  width: 90%;
+  display: none;
+  font-size: 12px;
+  color: var(--DarkGrayishBlue);
+}
+
+.activeH2 {
+  font-weight: 700 !important;
+}
+.activePara {
+  display: block !important;
+}
+.activeArrow {
+  transform: rotateZ(180deg);
+}
+
+@media only screen and (max-width: 600px) {
+  .container {
+    max-width: 400px;
+    margin-top: 30px;
+  }
+  .card {
+    grid-template-columns: 1fr;
+  }
+  .illustration {
+    justify-content: center;
+  }
+  .illus-main {
+    position: absolute;
+    width: 55%;
+    left: 23%;
+    transform: translateY(-15px);
+  }
+  .img-box {
+    width: 50%;
+  }
+  .img-woman {
+    width: 100%;
+  }
+  .illus-bg {
+    transform: translateY(-20px);
+  }
+
+  .content {
+    text-align: center;
+    padding: 10px;
+    margin: 20px;
+    margin-top: 80px;
+  }
+
+  .faq {
+    margin-top: 0;
+    text-align: left;
+  }
+  .faq h2 {
+    font-size: 15px;
+  }
+  h1 {
+    margin-bottom: 30px;
+  }
+  hr {
+    margin-bottom: 18px;
+  }
+  .faq p {
+    width: 100%;
+  }
+}
