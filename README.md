@@ -8,11 +8,11 @@ This is a solution to the [FAQ accordion card challenge on Frontend Mentor](http
 
 ### Screenshot
 
-<img src="./images/sol-desktop.png" alt="Mobile Preview" style="width:80%;"/>
+<img src="./images/sol-desktop.png" alt="Mobile Preview" style="width:90%;"/>
 
 Desktop View
 
-<img src="./images/sol-mobile.png" alt="Mobile Preview" style="width:50%;"/>
+<img src="./images/sol-mobile.png" alt="Mobile Preview" style="width:30%;"/>
 
 Mobile View
 
@@ -26,6 +26,7 @@ Mobile View
 - CSS Grid
 - CSS Flexbox
 - CSS custom properties
+- Javascript(Some ES6 features used)
 
 ## Author
 
