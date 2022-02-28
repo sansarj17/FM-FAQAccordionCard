@@ -18,8 +18,8 @@ Mobile View
 
 ### Links
 
-- Solution URL: [Solution](https://www.frontendmentor.io/solutions/profile-card-component-loAMcXeil)
-- Live Site URL: [Live Site](https://sansarj17.github.io/FM-ProfileCard/)
+- Solution URL: [Solution](https://www.frontendmentor.io/solutions/faq-accordion-card-ZRNKpuudS)
+- Live Site URL: [Live Site](https://sansarj17.github.io/FM-FaqAccordionCard/)
 
 ### Built with
 
